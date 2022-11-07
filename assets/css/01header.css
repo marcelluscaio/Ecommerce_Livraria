@@ -4,7 +4,7 @@
    height: 12vh;
    display: flex;
    align-items: center;
-   padding: 0 .5rem;
+   padding: 0 .875rem;
 }
 
 .header--link{
@@ -24,7 +24,7 @@
 }
 
 .icons--icon{
-   --icon-size: 7vh;
+   --icon-size: 5.5vh;
    height: var(--icon-size);
    width: var(--icon-size);
 }
@@ -42,5 +42,27 @@
    background-color: var(--yellow);
    width: 65%;
    height: 4px;
-   border-radius: 3px;
+   border-radius: 4px;   
+   transform-origin: 0; 
+   transition: transform .5s ease-in-out, opacity .75s ease-in-out;
+}
+
+.close > .burger--line{
+   background-color: var(--red);
+}
+
+.close > .line-one{
+   transform: translateX(20%) rotate(45deg) scaleX(0.85);
+   transition: transform 1.5s ease-in-out, background-color 1s ease-in;
+}
+
+.close > .line-two{
+   opacity: 0;
+   background-color: var(--yellow);
+   transition: opacity .5s ease-in-out;
+}
+
+.close > .line-three{
+   transform: translateX(20%) rotate(-45deg) scaleX(0.85);
+   transition: transform 1.5s ease-in-out, background-color 1s ease-in;
 }

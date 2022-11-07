@@ -1,0 +1,78 @@
+footer{
+   background-color: var(--orange);
+   padding: 1.5rem .875rem;
+}
+
+.footer--title{
+   font-family: var(--font-art);
+   font-size: var(--size-xlg);
+   color: var(--yellow);
+   text-align: center;
+   line-height: 1.4;
+   margin-bottom: .5rem;
+}
+
+.footer--address{
+   font-family: var(--font-sober);
+   font-size: var(--size-sm);
+   color: var(--yellow);
+   font-weight: 300;
+   text-align: center;
+   line-height: 1.2;
+   margin-bottom: 1.5rem;
+}
+
+.footer--table{
+   font-family: var(--font-sober);
+   font-size: var(--size-sm);
+   color: var(--yellow);
+   font-weight: 300;
+   line-height: 1.8;
+   margin: 0 auto 3rem;
+   width: 75%;
+}
+
+.footer--table tr:nth-of-type(2n){
+   background-color: var(--red-transparent)
+}
+
+.footer--table tr:nth-of-type(2n -1){
+   background-color: var(--green-transparent)
+}
+
+.footer--table th{
+   font-weight: 600;
+   text-align: left;
+}
+
+.footer--table td{
+   text-align: center;
+}
+
+.footer--list{
+   margin-bottom: 3.5rem;
+}
+
+.list--item{
+   text-align: center;
+   margin-bottom: 1rem;
+}
+
+.item--link{
+   text-decoration: none;
+   cursor: pointer;
+   font-family: var(--font-sober);
+   font-size: var(--size-nm);
+   color: var(--yellow);
+   font-weight: 700;
+}
+
+.footer--social{
+   display: flex;
+   justify-content: center;
+   gap: 4vh;
+}
+
+.social--link--image{
+   height: 9vh;
+}

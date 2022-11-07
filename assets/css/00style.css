@@ -1,5 +1,7 @@
 @import url("reset.css");
 @import url("01header.css");
+@import url("03main.css");
+@import url("04footer.css");
 
 
 :root{
@@ -7,7 +9,9 @@
    --orange: #E28819;
    --orange-transparent:#E2881988;
    --red: #CF4835;
+    --red-transparent: #CF483544;
    --green: #8FAB49;
+   --green-transparent: #8FAB4944;
 
    --font-art: 'Lobster', cursive;
    --font-sober: 'Rubik', sans-serif;
