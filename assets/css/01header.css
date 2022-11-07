@@ -1,0 +1,46 @@
+.header{
+   background-color: var(--orange);
+   width: 100%;
+   height: 12vh;
+   display: flex;
+   align-items: center;
+   padding: 0 .5rem;
+}
+
+.header--link{
+   margin-right: auto;
+}
+
+.link--image{
+   height: 9vh;
+
+}
+
+.header--icons{
+   height: 100%;
+   display: flex;
+   align-items: center;
+   gap: .5em;
+}
+
+.icons--icon{
+   --icon-size: 7vh;
+   height: var(--icon-size);
+   width: var(--icon-size);
+}
+
+.burger{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 9px;
+   width: 4.25rem;
+}
+
+.burger--line{
+   background-color: var(--yellow);
+   width: 65%;
+   height: 4px;
+   border-radius: 3px;
+}
