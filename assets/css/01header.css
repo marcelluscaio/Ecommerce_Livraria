@@ -66,3 +66,56 @@
    transform: translateX(20%) rotate(-45deg) scaleX(0.85);
    transition: transform 1.5s ease-in-out, background-color 1s ease-in;
 }
+
+.header--menu,
+.user{
+   display: none;
+}
+
+@media screen and (min-width: 800px) {
+   .header{
+      justify-content: space-between;
+      padding: 0 1.5em;
+   }
+
+   .user{
+      display: block;
+   }
+
+   .header--link{
+      margin-right: 0;
+   }
+   
+   .burger{
+      display: none;
+   }
+
+   .header--menu{
+      display: block;
+   }
+
+   .header--icons{
+      gap: 1.5em;
+   }
+   
+   .header--list{
+      display: flex;
+      margin-right: 1.5rem;
+   }
+
+   .header--list--item{      
+      font-size: var(--size-nm);
+      margin-right: 2em;
+   }
+
+   .header--list--item:last-of-type{
+      margin-right: 0;
+   }
+
+   .header--list--item--link{
+   text-decoration: none;
+   cursor: pointer;
+   font-family: var(--font-art);
+   color: var(--yellow);
+   }
+}

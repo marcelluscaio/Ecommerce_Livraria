@@ -13,6 +13,7 @@
    flex-wrap: wrap;
    gap: 1.25rem;
    margin-bottom: 3rem ;
+   justify-content: space-evenly;
 }
 
 .card-section--card{
@@ -65,4 +66,20 @@
    padding: .125em 0;
    border: none;
    border-radius: .625em;
+}
+
+@media screen and (min-width: 600px){
+   .card-section--card{
+      width: 23%;
+   }
+}
+
+@media screen and (min-width: 2000px){
+   .card-section--card{
+      width: 19%;
+   }
+
+   .card-section--card:last-of-type{
+      margin-right: auto;
+   }
 }

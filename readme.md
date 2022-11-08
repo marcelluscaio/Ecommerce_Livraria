@@ -4,4 +4,4 @@ Readme under construction
 2) Burger button animation
 3) Fluid Typography
 4) Mobile-first
-5) 
+5) Responsivity from 300px to 2600
