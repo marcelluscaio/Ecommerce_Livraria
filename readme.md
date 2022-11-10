@@ -5,3 +5,8 @@ Readme under construction
 3) Fluid Typography
 4) Mobile-first
 5) Responsivity from 300px to 2600
+
+
+[] Subsection burger
+[] Subsection on hover
+[] Cart
