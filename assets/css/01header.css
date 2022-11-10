@@ -73,22 +73,25 @@
    transition: transform 1.5s ease-in-out, background-color 1s ease-in;
 }
 
+:root{
+   --menu-height: 10vh;
+}
+
 .burger--menu{
    position: absolute;
    left: 0;
    right: 0;
-   top: 0;
-   /* transition: transform 2s ease; */
-}
-
-.close > .burger--menu{
+   top: 0;   
+   z-index: -1; 
+   background-color: var(--orange-transparent);
    display: block;
    width: 100%;
-   --menu-height: 9vh;
-   height: var(--menu-height);   
-   transform: translateY(var(--menu-height));
-   background-color: var(--orange-transparent);
+   height: var(--menu-height);
+   transition: transform 2s ease; 
+}
 
+.close > .burger--menu{      
+   transform: translateY(var(--menu-height));
    
 }
 
