@@ -29,15 +29,31 @@
             <div class="burger--line line-one"></div>
             <div class="burger--line line-two"></div>
             <div class="burger--line line-three"></div>
-            <nav class="burger--menu">
-               <ul class="burger--menu--list">
-                  <li class="burger--menu--list--item"><a class="burger--menu--list--item--link" href="google.com">Books</a></li>
-                  <li class="burger--menu--list--item"><a class="burger--menu--list--item--link" href="#">Comics</a></li>
-                  <li class="burger--menu--list--item"><a class="burger--menu--list--item--link" href="#">Login</a></li>
-                  <li class="burger--menu--list--item"><a class="burger--menu--list--item--link" href="#">About Bookworm</a></li>
-               </ul>
-            </nav>
          </div>
+         <nav class="burger--menu">
+            <ul class="burger--menu--list">
+               <li class="burger--menu--list--item"><a class="burger--menu--list--item--link" href="google.com">Books</a>
+                  <label for="books-arrow" class="books-arrow arrow"></label>
+                  <input type="radio" id="books-arrow" class="checkbox" name="submenu">
+                  <ul class="list--item--submenu">
+                     <li class="submenu--item"><a class="submenu--item--link" href="#">Fiction</a></li>
+                     <li class="submenu--item"><a class="submenu--item--link" href="#">Non-fiction</a></li>
+                  </ul>
+               </li>
+
+               <li class="burger--menu--list--item"><a class="burger--menu--list--item--link" href="#">Comics</a>
+                  <label for="comics-arrow" class="comics-arrow arrow" ></label>
+                  <input type="radio" id="comics-arrow" class="checkbox" name="submenu">
+                  <ul class="list--item--submenu">
+                     <li class="submenu--item"><a class="submenu--item--link" href="#">DC</a></li>
+                     <li class="submenu--item"><a class="submenu--item--link" href="#">Marvel</a></li>
+                     <li class="submenu--item"><a class="submenu--item--link" href="#">Others</a></li>
+                  </ul>
+               </li>
+               <li class="burger--menu--list--item"><a class="burger--menu--list--item--link" href="#">Login</a></li>
+               <li class="burger--menu--list--item"><a class="burger--menu--list--item--link" href="#">About Bookworm</a></li>
+            </ul>
+         </nav>
       </div>
    </header>
    <section class="swiper"></section>
