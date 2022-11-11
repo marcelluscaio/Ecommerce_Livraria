@@ -10,3 +10,5 @@ Readme under construction
 [] Subsection burger
 [] Subsection on hover
 [] Cart
+
+- [ ] Make subsection appear on right
