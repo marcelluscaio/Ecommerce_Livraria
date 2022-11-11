@@ -11,7 +11,6 @@
 .header--menu,
 .burger--menu,
 .user,
-.list--item--submenu,
 .checkbox{
    display: none;
 }
@@ -62,7 +61,7 @@
 
 .close > .line-one{
    transform: translateX(20%) rotate(45deg) scaleX(0.85);
-   transition: transform 1.5s ease-in-out, background-color 1s ease-in;
+   transition: transform 1s ease-in-out, background-color .5s ease-in;
 }
 
 .close > .line-two{
@@ -73,7 +72,7 @@
 
 .close > .line-three{
    transform: translateX(20%) rotate(-45deg) scaleX(0.85);
-   transition: transform 1.5s ease-in-out, background-color 1s ease-in;
+   transition: transform 1s ease-in-out, background-color .5s ease-in;
 }
 
 :root{
@@ -90,12 +89,12 @@
    
    transform: scale(1,0) ;
    transform-origin: top; 
-   transition: transform 0.5s ease;  
+   transition: transform 1s ease-in;  
 }
 
 .close + .burger--menu{      
    transform: scale(1,1);    
-   transition: transform 2s ease;
+   transition: transform .5s ease-out;
 }
 
 .burger--menu--list{
@@ -117,12 +116,12 @@
    position: relative;
 
    opacity: 0;
-   transition: opacity .5s ease;
+   transition: opacity .5s linear .25s;
 }
 
 .close ~ .burger--menu .burger--menu--list--item{
    opacity: 1;
-   transition: opacity 2s ease .5s;
+   transition: opacity .5s ease;
 }
 
 .burger--menu--list--item--link{
@@ -137,7 +136,7 @@
    position: absolute;
    top: 50%;
    transform: translateY(-30%);
-   right: 0;
+   left: 0;
    width: 0;
    height: 0;
    border-top: 12px solid var(--orange);
@@ -145,12 +144,21 @@
    border-left: 7px solid transparent;
 }
 
-.checkbox:checked + .list--item--submenu{
+.list--item--submenu{
    display: block;
    width: 100%;
    position: absolute;
    top: 0;
+   left: 0;
    background-color: var(--orange-transparent);
+   z-index: -1;
+   opacity: 0;
+   transition: left .5s ease-in, opacity .4s linear .4s;
+}
+
+.checkbox:checked + .list--item--submenu{      
+   transition: left .5s ease;
+   opacity: 1;
 }
 
 .submenu--item--link{

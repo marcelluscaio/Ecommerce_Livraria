@@ -7,8 +7,11 @@ Readme under construction
 5) Responsivity from 300px to 2600
 
 - [X] Uncheck all checkboxes when a new one is checked
+- [X] Uncheck all checkboxes when burger menu is closed
 - [X] Set submenu position based on its height
 - [X] Make subsection appear on left
+- [X] Animate subsection
+
 - [ ] Position arrow on the left
 - [ ] Feeding you since... on image
 

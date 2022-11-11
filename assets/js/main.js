@@ -16,9 +16,14 @@ checkboxes.forEach((checkbox) => {
    });
 });
 
+//uncheck checkboxes when menu is hidden
+burgerButton.addEventListener("click", () => {
+   checkboxes.forEach(checkbox => checkbox.checked = false);
+});
+
+
 //getting menu height to set its position
 const burgerMenu = document.querySelector(".burger--menu");
-
 burgerButton.addEventListener("click", () => {   
    const menuHeight = burgerMenu.offsetHeight;
    burgerMenu.style.bottom = `${-menuHeight}px`;
@@ -27,9 +32,13 @@ burgerButton.addEventListener("click", () => {
 //getting submenu width to set its position
 checkboxes.forEach((checkbox) => { 
    checkbox.addEventListener("click", () => {
+      if(checkbox.checked){
       const submenu = checkbox.nextElementSibling;
       const submenuWidth = submenu.offsetWidth;
-      console.log(submenuWidth);
-      submenu.style.left = `${-submenuWidth}px`
+      submenu.style.left = `${-submenuWidth}px`;
+      } else if(!checkbox.checked){
+         const submenu = checkbox.nextElementSibling;
+         submenu.style.left = `0`;
+      };
    });
 });
