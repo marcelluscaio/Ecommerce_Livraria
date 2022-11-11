@@ -7,7 +7,10 @@ Readme under construction
 5) Responsivity from 300px to 2600
 
 - [X] Uncheck all checkboxes when a new one is checked
-- [ ] Make subsection appear on right
+- [X] Set submenu position based on its height
+- [X] Make subsection appear on left
+- [ ] Position arrow on the left
+- [ ] Feeding you since... on image
 
 
 [] Subsection burger

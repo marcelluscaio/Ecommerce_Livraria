@@ -10,10 +10,13 @@ checkboxes.forEach((checkbox) => {
          checkboxes.forEach(checkbox => checkbox.checked = false);
          checkbox.checked = true;
       }
+      //Adjusting menu position due to chenge in height
+      /* const menuHeight = burgerMenu.offsetHeight;
+      burgerMenu.style.bottom = `${-menuHeight}px`; */
    });
 });
 
-//getting submenu height to set its position
+//getting menu height to set its position
 const burgerMenu = document.querySelector(".burger--menu");
 
 burgerButton.addEventListener("click", () => {   
@@ -21,3 +24,12 @@ burgerButton.addEventListener("click", () => {
    burgerMenu.style.bottom = `${-menuHeight}px`;
 });
 
+//getting submenu width to set its position
+checkboxes.forEach((checkbox) => { 
+   checkbox.addEventListener("click", () => {
+      const submenu = checkbox.nextElementSibling;
+      const submenuWidth = submenu.offsetWidth;
+      console.log(submenuWidth);
+      submenu.style.left = `${-submenuWidth}px`
+   });
+});

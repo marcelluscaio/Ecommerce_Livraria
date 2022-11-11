@@ -112,9 +112,12 @@
 }
 
 .burger--menu--list--item{
+   width: 100%;
+   text-align: center;
+   position: relative;
+
    opacity: 0;
    transition: opacity .5s ease;
-   position: relative;
 }
 
 .close ~ .burger--menu .burger--menu--list--item{
@@ -134,7 +137,7 @@
    position: absolute;
    top: 50%;
    transform: translateY(-30%);
-   right: -2rem;
+   right: 0;
    width: 0;
    height: 0;
    border-top: 12px solid var(--orange);
@@ -144,6 +147,10 @@
 
 .checkbox:checked + .list--item--submenu{
    display: block;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   background-color: var(--orange-transparent);
 }
 
 .submenu--item--link{
