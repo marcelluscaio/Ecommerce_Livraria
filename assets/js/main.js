@@ -29,6 +29,19 @@ burgerButton.addEventListener("click", () => {
    burgerMenu.style.bottom = `${-menuHeight}px`;
 });
 
+//rotating arrow
+checkboxes.forEach(checkbox => {
+   checkbox.addEventListener("click", () => {   
+      if(checkbox.checked){
+         const label = checkbox.previousElementSibling;
+         label.style.transform = "translateY(-50%) rotate(90deg)"
+      } else if(!checkbox.checked){
+         const label = checkbox.previousElementSibling;
+         label.style.transform = "translateY(-50%) rotate(0)"
+      }
+   });
+});
+
 //getting submenu width to set its position
 checkboxes.forEach((checkbox) => { 
    checkbox.addEventListener("click", () => {
