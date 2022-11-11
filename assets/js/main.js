@@ -16,17 +16,27 @@ checkboxes.forEach((checkbox) => {
    });
 });
 
-//uncheck checkboxes when menu is hidden
+//uncheck checkboxes and unrotates arrows when menu is hidden
 burgerButton.addEventListener("click", () => {
-   checkboxes.forEach(checkbox => checkbox.checked = false);
+      checkboxes.forEach(checkbox => {checkbox.checked = false
+      const label = checkbox.previousElementSibling;
+      label.style.transform = "translateY(-50%) rotate(0)"   
+   });   
 });
 
 
 //getting menu height to set its position
 const burgerMenu = document.querySelector(".burger--menu");
+const header = document.querySelector(".header");
 burgerButton.addEventListener("click", () => {   
    const menuHeight = burgerMenu.offsetHeight;
    burgerMenu.style.bottom = `${-menuHeight}px`;
+   header.style.transition = "margin-bottom .5s ease-out"
+   header.style.marginBottom = `${menuHeight}px`;
+   if(!burgerButton.classList.contains("close")){
+      header.style.transition = "margin-bottom 1s ease-in"
+      header.style.marginBottom = 0;
+   }
 });
 
 //rotating arrow

@@ -11,7 +11,9 @@ Readme under construction
 - [X] Set submenu position based on its height
 - [X] Make subsection appear on left
 - [X] Animate subsection
-- [ ] Position arrow on the left
+- [X] Position arrow on the left
+- [X] Animate arrow
+- [ ] Style submenu
 - [ ] Feeding you since... on image
 
 

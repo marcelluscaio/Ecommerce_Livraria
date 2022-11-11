@@ -85,9 +85,9 @@
    height: auto;
    width: 50%;
    background-color: var(--yellow);
-   display: block;;
+   display: block;
    
-   transform: scale(1,0) ;
+   transform: scale(1,0);
    transform-origin: top; 
    transition: transform 1s ease-in;  
 }
@@ -107,13 +107,13 @@
    border: 2px solid var(--orange);
    border-top: none;
    width: 100%;
-   padding: 1em 0;
 }
 
 .burger--menu--list--item{
    width: 100%;
    text-align: center;
    position: relative;
+   padding: .5em 0;
 
    opacity: 0;
    transition: opacity .5s linear .25s;
@@ -126,7 +126,6 @@
 
 .burger--menu--list--item--link{
    text-decoration: none;
-   cursor: pointer;
    font-family: var(--font-art);
    color: var(--orange);
 }
@@ -162,8 +161,14 @@
    opacity: 1;
 }
 
+.submenu--item{
+   padding: .5em 0;
+}
+
 .submenu--item--link{
    text-decoration: none;
+   color: var(--yellow);
+   font-family: var(--font-art);
 }
 
 
