@@ -16,8 +16,7 @@ Readme under construction
 - [X] Animate arrow
 - [X] Style submenu
 - [X] Increase header's margin-bottom according to menu height
-
-- [ ] Feeding you since... on image
+- [X] Text Feeding you since... over image of  eaten book
 
 
 [] Subsection burger

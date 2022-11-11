@@ -1,0 +1,21 @@
+.banner--container{
+   position: relative;
+}
+
+.banner--image{
+   width: 90%;
+   margin: 0 auto;
+   display: block;
+}
+
+.banner--text{
+   font-family: var(--font-art);
+   font-size: var(--size-lg);
+   color: var(--orange);
+   text-align: center;
+   line-height: 1.4;
+   position: absolute;
+   top: 15%;
+   left: 50%;
+   width: 40%;
+}
