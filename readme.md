@@ -6,9 +6,10 @@ Readme under construction
 4) Mobile-first
 5) Responsivity from 300px to 2600
 
+- [X] Uncheck all checkboxes when a new one is checked
+- [ ] Make subsection appear on right
+
 
 [] Subsection burger
 [] Subsection on hover
 [] Cart
-
-- [ ] Make subsection appear on right

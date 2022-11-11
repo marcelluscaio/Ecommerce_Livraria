@@ -83,8 +83,8 @@
 .burger--menu{
    position: absolute;
    right: 0;
-   height: var(--menu-height);
-   bottom: calc(-1 * var(--menu-height));
+   height: auto;
+   width: 50%;
    background-color: var(--yellow);
    display: block;;
    
@@ -107,7 +107,8 @@
    background-color: var(--yellow);
    border: 2px solid var(--orange);
    border-top: none;
-   padding: 1em 1.5em;
+   width: 100%;
+   padding: 1em 0;
 }
 
 .burger--menu--list--item{
