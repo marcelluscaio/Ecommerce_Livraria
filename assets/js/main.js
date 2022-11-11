@@ -2,17 +2,20 @@
 const burgerButton = document.querySelector(".burger");
 burgerButton.addEventListener("click", () => burgerButton.classList.toggle("close"));
 
-//uncheck checkboxes when a new is checked
+//uncheck checkboxes when a new is checked. Unrotate arrow.
 const checkboxes = document.querySelectorAll(".checkbox");
 checkboxes.forEach((checkbox) => {
    checkbox.addEventListener("click", () => {
       if(checkbox.checked){
-         checkboxes.forEach(checkbox => checkbox.checked = false);
+         checkboxes.forEach(checkbox => {
+            checkbox.checked = false;
+            const label = checkbox.previousElementSibling;
+            label.style.transform = "translateY(-50%) rotate(0)";
+            const submenu = checkbox.nextElementSibling;
+            submenu.style.left = `0`;
+         });
          checkbox.checked = true;
       }
-      //Adjusting menu position due to chenge in height
-      /* const menuHeight = burgerMenu.offsetHeight;
-      burgerMenu.style.bottom = `${-menuHeight}px`; */
    });
 });
 
