@@ -17,8 +17,8 @@ Readme under construction
 - [X] Style submenu
 - [X] Increase header's margin-bottom according to menu height
 - [X] Text Feeding you since... over image of  eaten book
-
-
-[] Subsection burger
-[] Subsection on hover
-[] Cart
+- [X] Show Swiper
+- [ ] Control Swiper
+- [ ] Subsection filters books on click
+- [ ] Cart
+- [ ] Submenu appers on hover (width > 800px)
