@@ -17,14 +17,17 @@
 }
 
 .card-section--card{
-   width: 46%;
-   border-radius: 3em 1em 1em 3em/ 2em 1em 1em 2em;
+   width: 90%;
+   border-radius: 3em 1em/ 1em 3em;
    background-color: var(--orange-transparent);
    padding-bottom: 1.25em;  
 }
 
 .card--image{
-   width: 100%;
+   width: 85%;
+   display: block;
+   margin: 1em auto;
+   border-radius: 3em 1em / 1em 3em;
 }
 
 .card--book{

@@ -22,6 +22,8 @@ Readme under construction
 - [X] Images treatment at photoshop
 - [X] Insert new images in cardsection
 - [X] Subsection filters books on click
+- [ ] Card styling
+- [ ] Filter scrolls to main part
 - [ ] Clicking on logo shows all books
 - [ ] Clicking on burger--menu--list--item--link triggers arrow
 - [ ] Cart
