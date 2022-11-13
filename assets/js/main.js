@@ -109,16 +109,16 @@ buttonsList.forEach(button => {
   });
 });
 
-//filter
+//filter and scrolls to main
 const buttonsParents = document.querySelectorAll(".submenu--item");
 const filterButtons = [];
 buttonsParents.forEach(parent => filterButtons.push(parent.firstElementChild));
 const bookCards = document.querySelectorAll(".card-section--card");
 
+
 filterButtons.forEach(button => {
    button.addEventListener("click", (e) => {
-      const buttonType = e.target.dataset.buttontype;
-      
+      const buttonType = e.target.dataset.buttontype;      
       bookCards.forEach(card => {
          if(card.dataset.booktype === buttonType){
             card.classList.remove("hide")
@@ -126,7 +126,13 @@ filterButtons.forEach(button => {
             card.classList.add("hide");
          }
       });
+      document.querySelector("main").scrollIntoView({
+         behavior: 'smooth'
+      });
+      /*
+      Another method 
+      const mainPosition = document.querySelector("main").offsetTop;
+      window.scrollTo(0, mainPosition);
+       */
    });
 });
-
-/* filterButtons.addEventListener("click", console.log("Fuiclicado")) */
