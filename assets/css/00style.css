@@ -31,3 +31,7 @@
 body{
    background-color: var(--yellow);
 }
+
+.hide{
+   display: none;
+}

@@ -166,9 +166,11 @@
 }
 
 .submenu--item--link{
-   text-decoration: none;
+   background-color: transparent;
+   border: none;
    color: var(--yellow);
-   font-family: var(--font-art);
+   font-family: var(--font-art);   
+   font-size: 1em;
 }
 
 

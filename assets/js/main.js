@@ -78,7 +78,6 @@ buttonsList.forEach(button => {
   button.addEventListener("click", (e) => {    
       e.target.disabled = true;
       let direction = e.target.dataset.direction;
-
       if(direction==="next"){
          swiper.style.transition = "transform 2s ease-in-out";
          transformRate -= 100;
@@ -106,7 +105,28 @@ buttonsList.forEach(button => {
             , 2000);
          }
       };
-
       setTimeout(() => e.target.disabled = false, 2000);
   });
 });
+
+//filter
+const buttonsParents = document.querySelectorAll(".submenu--item");
+const filterButtons = [];
+buttonsParents.forEach(parent => filterButtons.push(parent.firstElementChild));
+const bookCards = document.querySelectorAll(".card-section--card");
+
+filterButtons.forEach(button => {
+   button.addEventListener("click", (e) => {
+      const buttonType = e.target.dataset.buttontype;
+      
+      bookCards.forEach(card => {
+         if(card.dataset.booktype === buttonType){
+            card.classList.remove("hide")
+         } else {
+            card.classList.add("hide");
+         }
+      });
+   });
+});
+
+/* filterButtons.addEventListener("click", console.log("Fuiclicado")) */

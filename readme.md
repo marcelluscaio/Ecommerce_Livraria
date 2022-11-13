@@ -19,6 +19,10 @@ Readme under construction
 - [X] Text Feeding you since... over image of  eaten book
 - [X] Show Swiper
 - [X] Control Swiper
-- [ ] Subsection filters books on click
+- [X] Images treatment at photoshop
+- [X] Insert new images in cardsection
+- [X] Subsection filters books on click
+- [ ] Clicking on logo shows all books
+- [ ] Clicking on burger--menu--list--item--link triggers arrow
 - [ ] Cart
 - [ ] Submenu appers on hover (width > 800px)

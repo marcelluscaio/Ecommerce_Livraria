@@ -36,8 +36,12 @@
                   <label for="books-arrow" class="books-arrow arrow"></label>
                   <input type="checkbox" id="books-arrow" class="checkbox" name="submenu">
                   <ul class="list--item--submenu">
-                     <li class="submenu--item"><a class="submenu--item--link" href="#">Fiction</a></li>
-                     <li class="submenu--item"><a class="submenu--item--link" href="#">Non-fiction</a></li>
+                     <li class="submenu--item">
+                        <button class="submenu--item--link" data-buttontype="fiction">Fiction</button>
+                     </li>
+                     <li class="submenu--item">
+                        <button class="submenu--item--link" data-buttontype="nonfiction">Non-fiction</button>
+                     </li>
                   </ul>
                </li>
 
@@ -45,9 +49,15 @@
                   <label for="comics-arrow" class="comics-arrow arrow" ></label>
                   <input type="checkbox" id="comics-arrow" class="checkbox" name="submenu">
                   <ul class="list--item--submenu">
-                     <li class="submenu--item"><a class="submenu--item--link" href="#">DC</a></li>
-                     <li class="submenu--item"><a class="submenu--item--link" href="#">Marvel</a></li>
-                     <li class="submenu--item"><a class="submenu--item--link" href="#">Others</a></li>
+                     <li class="submenu--item">
+                        <button class="submenu--item--link" data-buttontype="dc">DC</button>
+                     </li>
+                     <li class="submenu--item">
+                        <button class="submenu--item--link" data-buttontype="marvel">Marvel</button>
+                     </li>
+                     <li class="submenu--item">
+                        <button class="submenu--item--link" data-buttontype="others">Others</button>
+                     </li>
                   </ul>
                </li>
                <li class="burger--menu--list--item"><a class="burger--menu--list--item--link" href="#">Login</a></li>
@@ -61,68 +71,78 @@
          <button class="swiper--wrapper--arrow arrow-previous" data-direction="previous"></button>
          <button class="swiper--wrapper--arrow arrow-next" data-direction="next"></button>
          <ul class="swiper--wrapper--list" style="transform: translateX(-200vw);">
-            <li class="swiper--wrapper--list--item"><img class="swiper--wrapper--list--item--image" src="assets/images/wormeating.png" alt=""></li>
-            <li class="swiper--wrapper--list--item"><img class="swiper--wrapper--list--item--image" src="assets/images/wormeating.png" alt=""></li>
-            <li class="swiper--wrapper--list--item"><img class="swiper--wrapper--list--item--image" src="assets/images/wormeating.png" alt=""></li>
-            <li class="swiper--wrapper--list--item"><img class="swiper--wrapper--list--item--image" src="assets/images/wormeating.png" alt=""></li>
-            <li class="swiper--wrapper--list--item"><img class="swiper--wrapper--list--item--image" src="assets/images/wormeating.png" alt=""></li>                      
+            <li class="swiper--wrapper--list--item">
+               <img class="swiper--wrapper--list--item--image" src="assets/images/wormeating.png" alt="">
+            </li>
+            <li class="swiper--wrapper--list--item">
+               <img class="swiper--wrapper--list--item--image" src="assets/images/wormeating.png" alt="">
+            </li>
+            <li class="swiper--wrapper--list--item">
+               <img class="swiper--wrapper--list--item--image" src="assets/images/wormeating.png" alt="">
+            </li>
+            <li class="swiper--wrapper--list--item">
+               <img class="swiper--wrapper--list--item--image" src="assets/images/wormeating.png" alt="">
+            </li>
+            <li class="swiper--wrapper--list--item">
+               <img class="swiper--wrapper--list--item--image" src="assets/images/wormeating.png" alt="">
+            </li>                      
          </ul>
       </div>
    </section>
    <main>
       <h1 class="main--title">Find your next meal</h1>
       <section class="main--card-section">
-         <div class="card-section--card">
-            <img class="card--image" src="assets/images/arteBookworm.png" alt="">
+         <div class="card-section--card" data-booktype="fiction">
+            <img class="card--image" src="assets/images/book1.jpg" alt="">
             <h3 class="card--book">Titlest title</h3>
             <p class="card--author">Creator von McAuthor</p>
             <p class="card--price">$500,00</p>
             <button class="card--button">Yummy!</button>
          </div>
-         <div class="card-section--card">
-            <img class="card--image" src="assets/images/arteBookworm.png" alt="">
+         <div class="card-section--card" data-booktype="fiction">
+            <img class="card--image" src="assets/images/book2.jpg" alt="">
             <h3 class="card--book">Titlest title</h3>
             <p class="card--author">Creator von McAuthor</p>
             <p class="card--price">$500,00</p>
             <button class="card--button">Yummy!</button>
          </div>
-         <div class="card-section--card">
-            <img class="card--image" src="assets/images/arteBookworm.png" alt="">
+         <div class="card-section--card" data-booktype="fiction">
+            <img class="card--image" src="assets/images/book3.jpg" alt="">
             <h3 class="card--book">Titlest title</h3>
             <p class="card--author">Creator von McAuthor</p>
             <p class="card--price">$500,00</p>
             <button class="card--button">Yummy!</button>
          </div>
-         <div class="card-section--card">
-            <img class="card--image" src="assets/images/arteBookworm.png" alt="">
+         <div class="card-section--card" data-booktype="nonfiction">
+            <img class="card--image" src="assets/images/book4.jpg" alt="">
             <h3 class="card--book">Titlest title</h3>
             <p class="card--author">Creator von McAuthor</p>
             <p class="card--price">$500,00</p>
             <button class="card--button">Yummy!</button>
          </div>
-         <div class="card-section--card">
-            <img class="card--image" src="assets/images/arteBookworm.png" alt="">
+         <div class="card-section--card" data-booktype="nonfiction">
+            <img class="card--image" src="assets/images/book5.jpg" alt="">
             <h3 class="card--book">Titlest title</h3>
             <p class="card--author">Creator von McAuthor</p>
             <p class="card--price">$500,00</p>
             <button class="card--button">Yummy!</button>
          </div>
-         <div class="card-section--card">
-            <img class="card--image" src="assets/images/arteBookworm.png" alt="">
+         <div class="card-section--card" data-booktype="dc">
+            <img class="card--image" src="assets/images/book6.jpg" alt="">
             <h3 class="card--book">Titlest title</h3>
             <p class="card--author">Creator von McAuthor</p>
             <p class="card--price">$500,00</p>
             <button class="card--button">Yummy!</button>
          </div>
-         <div class="card-section--card">
-            <img class="card--image" src="assets/images/arteBookworm.png" alt="">
+         <div class="card-section--card" data-booktype="marvel">
+            <img class="card--image" src="assets/images/book7.jpg" alt="">
             <h3 class="card--book">Titlest title</h3>
             <p class="card--author">Creator von McAuthor</p>
             <p class="card--price">$500,00</p>
             <button class="card--button">Yummy!</button>
          </div>
-         <div class="card-section--card">
-            <img class="card--image" src="assets/images/arteBookworm.png" alt="">
+         <div class="card-section--card" data-booktype="others">
+            <img class="card--image" src="assets/images/book8.jpg" alt="">
             <h3 class="card--book">Titlest title</h3>
             <p class="card--author">Creator von McAuthor</p>
             <p class="card--price">$500,00</p>
