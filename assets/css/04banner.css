@@ -3,14 +3,15 @@
 }
 
 .banner--image{
-   width: 90%;
+   max-width: 90%;
+   max-height: 85vh;
    margin: 0 auto;
    display: block;
 }
 
 .banner--text{
    font-family: var(--font-art);
-   font-size: var(--size-lg);
+   font-size: var(--size-nm);
    color: var(--orange);
    text-align: center;
    line-height: 1.4;

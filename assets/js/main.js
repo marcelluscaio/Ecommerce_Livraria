@@ -95,7 +95,7 @@ buttonsList.forEach(button => {
          swiper.style.transition = "transform 2s ease-in-out";
          transformRate += 100;
          swiper.style.transform = `translateX(${transformRate}vw)`;
-         if(transformRate>=400){
+         if(transformRate>=0){
             setTimeout(function() {
                swiper.style.transition = "none";
                swiper.style.transition = "transform 0s ease-in-out";
@@ -126,9 +126,7 @@ filterButtons.forEach(button => {
             card.classList.add("hide");
          }
       });
-      document.querySelector("main").scrollIntoView({
-         behavior: 'smooth'
-      });
+      document.querySelector("main").scrollIntoView({behavior: 'smooth'});
       /*
       Another method 
       const mainPosition = document.querySelector("main").offsetTop;
@@ -136,3 +134,56 @@ filterButtons.forEach(button => {
        */
    });
 });
+
+//Books list
+
+const books = [
+   {
+      "index": "1",
+      "name": "As Intermitências da Morte",
+      "author": "José Saramago",
+      "price": "50",
+   },
+   {
+      "index": "2",
+      "name": "Memórias Póstumas de Brás Cubas",
+      "author": "Machado de Assis",
+      "price": "100",
+   },
+   {
+      "index": "3",
+      "name": "Vidas Secas",
+      "author": "Graciliano Ramos",
+      "price": "30",
+   },
+   {
+      "index": "4",
+      "name": "A Vítima tem sempre razão?",
+      "author": "Francisco Bosco",
+      "price": "80",
+   },
+   {
+      "index": "5",
+      "name": "Valsa Brasileira",
+      "author": "Laura Carvalho",
+      "price": "48",
+   },
+   {
+      "index": "6",
+      "name": "Batman: Venom",
+      "author": "Denis O'Neil",
+      "price": "150",
+   },
+   {
+      "index": "7",
+      "name": "Marvel 1602",
+      "author": "Neil Gaiman",
+      "price": "150",
+   },
+   {
+      "index": "8",
+      "name": "Beasts of Burden",
+      "author": "Evan Dorkin | Jill Thompson",
+      "price": "300",
+   }
+];
